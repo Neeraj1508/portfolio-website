@@ -1,0 +1,298 @@
+@import url(utilities.css);
+
+/* Giving the variable name to the color used */
+:root{
+    --primary: #cc684c;
+    --dark: #72609b;
+    --pure: #ebe7e7;
+    --ternary: #898989;
+    --light: #F2F2F2;
+    --secondary: #070606;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+.logoName{
+    color: aqua;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+header{
+    background-color: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 90%, 0 100%);
+    
+}
+
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin:0 auto;
+}
+
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 3rem ;
+    text-transform: uppercase;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    
+}
+
+header nav .left a:hover{
+    color: var(--primary);
+}
+header nav{
+    padding: 2rem 0;
+}
+
+header nav .logo{
+    margin-right: 4rem;
+}
+
+.man{
+    padding: 2rem 0;
+}
+
+.man .left img{
+    width: 400px;
+}
+
+.man .right{
+    color: var(--pure);
+}
+
+.man .right h3{
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 0.4rem;
+}
+.man .right h2{
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.man .right h2 span{
+    color: var(--primary);
+}
+
+.man .right p{
+    line-height: 1;
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+
+.man .right{
+    margin-top: -9rem;
+}
+
+
+section{
+    padding: 6rem 0;
+}
+
+section.about .about-me-img{
+    height: 450px;
+}
+
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+section.about h1 span{
+    color: var(--primary);
+}
+
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+section.about p{
+    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+    color: var(--ternary);
+    line-height: 1.8;
+}
+section.about .social{
+    display: flex;
+}
+
+section.about .social a{
+    background: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: all 1s ease;
+}
+
+section.about .social a:hover{
+    background: violet;
+}
+
+section.about .social a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+
+.section-heading span{
+    color: var(--primary);
+}
+
+.section-heading + p{
+    color: var(--ternary);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+section.services{
+    background: var(--light);
+}
+
+section.services .card-rapper{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    /* we can also try this. */
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 7rem;
+
+}
+
+section.services .card-rapper .card{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: left;
+    transition: all .5s ease;
+}
+
+section.services .card-rapper .card img{
+    position: absolute;
+    top: -3.5rem;
+    left: 20%;
+    transform: translateX(-80%);
+}
+
+section.services .card-rapper .card h2{
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.services .card-rapper .card p{
+    font-family: "Lato", sans-serif;
+    color: var(--ternary);
+    /* margin-bottom: 4rem; */
+    line-height: 1.4;
+}
+
+section.services .card-rapper .card:hover{
+    background: var(--dark);
+}
+
+section.services .card-rapper .card:hover h2, section.services .card-rapper .card:hover p{
+    color: var(--pure);
+}
+
+section.freelancer{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/camera.png);
+    color: var(--pure);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 71% 80%, 0 100%);
+    padding-bottom: 14rem;
+}
+
+section.freelancer h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+section.freelancer p{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+section.reviews .slider .slide img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+section.reviews .slider .slide{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 6rem;
+}
+
+section.reviews .slider .slide p{
+    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+    color: var(--ternary);
+    margin-bottom: 1rem;
+}
+
+section.reviews .slider .slide span{
+    font-size: 0.8rem;
+}
+
+section.reviews .slider-dots .dots{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+section.reviews .slider-dots{
+    margin-top: 3rem;
+}
+
+section.reviews .slider-dots button{
+    font-size: 0;
+    width: 8px;
+    height: 5px;
+    margin-right: 0.2rem;
+    border: none;
+    outline: none;
+    background: var(--ternary);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+section.reviews .dots li.slick-active button{  
+    background: var(--primary);
+    width: 20px;
+}
