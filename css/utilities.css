@@ -53,5 +53,5 @@
 }
 
 .justify-center{
-    justify-content: center;
+    justify-content: flex-start;
 }
