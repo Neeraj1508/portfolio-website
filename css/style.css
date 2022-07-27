@@ -101,6 +101,8 @@ header nav .logo {
 
 .man .left img {
     width: 400px;
+    border-radius: 30px;
+    height: 37rem;
 }
 
 .man .right {
@@ -125,7 +127,7 @@ header nav .logo {
 }
 
 .man .right p {
-    line-height: 1;
+    line-height: 1.5;
     text-align: justify;
     margin-bottom: 3rem;
 }
@@ -166,6 +168,7 @@ section.about p {
 }
 
 section.about .social {
+    margin-top: 1rem;
     display: flex;
 }
 
@@ -604,8 +607,10 @@ footer .copyright {
     .hamberger{
         display: block;
     }
-    .man .left img{
-        width: 260px;
+    .man .left img {
+        width: 350px;
+        height: 35rem;
+        margin-right: 2rem;
     }
     .man .right h2{
         font-size: 3rem;
@@ -613,8 +618,11 @@ footer .copyright {
     .man{
         padding-top: 6rem;
     }
+    .man .right {
+        margin-top: 0rem;
+    }
     header{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 92%, 0 100%);;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);;
     }
     section.about .about-me-img {
         height: 327px;
@@ -645,7 +653,7 @@ footer .copyright {
     }
     .man .right{
         position: absolute;
-        top: 260px;
+        top: 204px;
         padding: 2px 0.5rem;
         background: linear-gradient(rgba(0, 0, 0, 0), rgba(138, 81, 192, 0.663));
     }
