@@ -547,6 +547,7 @@ footer .copyright {
     border: none;
     outline: none;
     cursor: pointer;
+    display: none;
 }
 
 .hamberger img {
@@ -600,6 +601,9 @@ footer .copyright {
     header #main-nav {
         display: none;
     }
+    .hamberger{
+        display: block;
+    }
     .man .left img{
         width: 260px;
     }
@@ -615,6 +619,9 @@ footer .copyright {
     section.about .about-me-img {
         height: 327px;
     }
+    section.about .social {
+        padding-top: 1rem;
+    }
     section.services .card-wrapper .card img{
         left: 35%;
     }
@@ -625,6 +632,71 @@ footer .copyright {
         grid-template-columns: repeat(1, 1fr);
     }
     section.blog{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 97%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 97%, 0 100%);
+    }
+}
+
+@media (max-width: 576px){
+    .man{
+        flex-direction: column;
+    }
+    header {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 96%, 0 100%);
+    }
+    .man .right{
+        position: absolute;
+        top: 260px;
+        padding: 2px 0.5rem;
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(138, 81, 192, 0.663));
+    }
+    .man .left{
+        margin-top: -5rem;
+        margin-right: -9rem;
+        padding-bottom: 2rem;
+    }
+    .about-inner-wrap{
+        flex-direction: column;
+    }
+    .about .right{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .about .right .social{
+        padding-top: 1rem;
+        justify-content: center;
+    }
+    section {
+        padding: 4rem 0;
+    }
+    section.services .card-wrapper{
+        grid-template-columns: repeat(1,1fr);
+        padding-top: 4rem;
+    }
+    section.freelancer h1{
+        line-height: 1.2;
+    }
+    section.freelancer{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 72% 89%, 0 100%);
+        padding-bottom: 7rem;
+    }
+    section.reviews .slider .slide{
+        padding: 0 1rem;
+    }
+    .section-heading+p{
+        margin-bottom: 3rem;
+    }
+    section.work .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.blog {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 98%, 0 100%);
+        padding-bottom: 5rem;
+    }
+    section.contact .card-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.contact .input-wrap{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 2rem;
     }
 }
